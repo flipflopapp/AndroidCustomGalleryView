@@ -1,5 +1,5 @@
 package com.example.coverflow;
-
+//For some global values
 public class GlobalPrefs {
 	
 	static int density;

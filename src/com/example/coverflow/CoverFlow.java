@@ -52,7 +52,6 @@ public class CoverFlow extends Gallery {
 	/**
 	 * The Centre of the Coverflow
 	 */
-	private boolean ver;
 	private int mCoveflowCenter;
 
 	private float mZAxis = 100.0f;
@@ -69,13 +68,12 @@ public class CoverFlow extends Gallery {
 				R.styleable.CoverFlow);
 		int val = a.getInteger(R.styleable.CoverFlow_orientation, 0);
 		if(val==0){
-			ver = true;
 			arr = new Vertical();
 		}
 		else if(val==1){
-			ver = false;
 			arr = new SemiCircular();
 		}
+		a.recycle();
 	}
 
 	public CoverFlow(Context context, AttributeSet attrs, int defStyle) {
@@ -85,13 +83,12 @@ public class CoverFlow extends Gallery {
 				R.styleable.CoverFlow);
 		int val = a.getInteger(R.styleable.CoverFlow_orientation, 0);
 		if(val==0){
-			ver = true;
 			arr = new Vertical();
 		}
 		else if(val==1){
-			ver = false;
 			arr = new SemiCircular();
 		}
+		a.recycle();
 	}
 
 	/**

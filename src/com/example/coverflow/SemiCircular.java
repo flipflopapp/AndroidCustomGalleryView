@@ -1,8 +1,7 @@
 package com.example.coverflow;
-
+//This class transforms gallery class into a semicircle
 import android.graphics.Camera;
 import android.graphics.Matrix;
-import android.util.Log;
 import android.view.animation.Transformation;
 import android.widget.ImageView;
 

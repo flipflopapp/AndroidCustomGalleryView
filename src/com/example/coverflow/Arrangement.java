@@ -1,10 +1,7 @@
 package com.example.coverflow;
+//Interface for different variations
 
-import android.graphics.Camera;
-import android.graphics.Matrix;
-import android.view.View;
 import android.view.animation.Transformation;
-import android.widget.Gallery;
 import android.widget.ImageView;
 
 public interface Arrangement {
