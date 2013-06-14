@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.coverflow"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+  <application
+            android:label="Cover Flow">
+    <uses-sdk 
+        android:minSdkVersion="4"
+        android:targetSdkVersion ="14"></uses-sdk>
+    <activity android:name="CoverFlowExample" >
+       <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.LAUNCHER" />                                            
+       </intent-filter>
+    </activity>
+    <activity android:name="Example2" >
+       <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.DEFAULT" />                                            
+       </intent-filter>
+    </activity>
+  </application>
+
+</manifest>

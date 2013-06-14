@@ -1,4 +1,3 @@
-AndroidCustomGalleryView
-========================
-
-This android widget makes it easy to customize an android gallery. For example, we can customize the gallery view to display images in a circular manner (in addition to normal horizontal and vertical).
+Android CoverFlow Widget
+===
+The original source of Neil Davies can be found at http://www.inter-fuser.com/2010/02/android-coverflow-widget-v2.html .
