@@ -206,14 +206,12 @@ public class CoverFlow extends Gallery {
 	@Override
 	public boolean onDown(MotionEvent e) {
 		getParent().requestDisallowInterceptTouchEvent(true);
-		Log.e("tag", "old x"+e.getX()+"old y"+e.getY());
+		//Log.e("tag", "old x"+e.getX()+"old y"+e.getY());
 		float tempx = Math.abs(e.getX());
 		float tempy = Math.abs(e.getY());
 		float div = (float) (GlobalPrefs.getScreenWidth()/3.6);
 		e.offsetLocation((-tempx+tempy-div),-tempy+tempx+arr.getDelta()/3);
-		Log.e("tag", "new x"+e.getX()+"new y"+e.getY());
-		//Log.e("tag", "msg"+getWidth());
-		//Toast.makeText(getContext(), "Pressure:"+e.getPressure(), Toast.LENGTH_SHORT).show();
+		//Log.e("tag", "new x"+e.getX()+"new y"+e.getY());
 		return super.onDown(e);
 	}	
 

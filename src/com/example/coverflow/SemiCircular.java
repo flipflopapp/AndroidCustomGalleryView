@@ -38,7 +38,7 @@ public class SemiCircular implements Arrangement {
 		delta = (float) Math.sqrt((thisc*thisc)-ty*ty);//parabolic delta using circle formula to be added in x position
 		//Log.e("tag", "msg"+delta);
 		del=(int) delta;
-		imageMatrix.postTranslate((float) (tx+delta-imageWidth*0.6), (imageHeight / 2) + ty);
+		imageMatrix.postTranslate((float) (tx+delta-imageWidth/2), (imageHeight / 2) + ty);
 		mCamera.restore();
 	}
 	@Override

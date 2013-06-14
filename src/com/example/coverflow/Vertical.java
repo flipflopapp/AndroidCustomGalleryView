@@ -25,7 +25,7 @@ public class Vertical implements Arrangement{
 			float zoomAmount = (float) (-120 + (rotation * 1.5));
 			mCamera.translate(0.0f, 0.0f, zoomAmount);
 		}
-		setDelta(3*c.getWidth()/2);
+		setDelta(c.getWidth()/2);
 		mCamera.rotateY(i);
 		mCamera.getMatrix(imageMatrix);
 		imageMatrix.preTranslate(-(imageWidth / 2), -(imageHeight / 2));
